@@ -4,6 +4,7 @@ Bem-vindo ao meu repositório de estudos! Aqui concentro todo o progresso do meu
 
 ## 🛠️ Tecnologias e Estudos
 
+- **HTML & CSS**: Estudo e exercícios para criação do 1º projeto
 - **Python**: Lógica de programação e scripts de automação.
 - **Git & GitHub**: Controle de versão e colaboração.
 - **Formação**: Cursos da Rocketseat e outras plataformas.
