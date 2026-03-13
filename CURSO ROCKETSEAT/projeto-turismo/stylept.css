@@ -1,0 +1,34 @@
+ @charset "UTF-8";
+ 
+ body{
+background-image: linear-gradient(to bottom, #E4E9F2, #BFB4AA);
+ }
+
+ h1{
+  color: #0B2A4A;
+ }
+
+ h2{
+  color: #D07A4A;
+ }
+
+ h3{
+  color: #6B7280;
+  text-transform: uppercase;
+ }
+ 
+ p{
+  text-align: justify;
+ }
+
+ img{
+  border-radius: 28px;
+  width: 100%;
+
+ }
+ .div {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: #56534d;
+}
