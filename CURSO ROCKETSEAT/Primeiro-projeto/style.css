@@ -227,8 +227,13 @@ header nav a:hover {
     
 }
 
+#projects {
+    background-color: #0A192F; 
+    padding: 80px 10%;         
+    text-align: center;
+}
 
-footer {
+.footer {
     background-color: var(--bg-navy);
     padding: 4rem 10%;
     text-align: center;
@@ -239,6 +244,8 @@ footer p {
     font-size: 0.8rem;
     color: rgba(255,255,255,0.5);
     margin-bottom: 1.5rem;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .social-links {
