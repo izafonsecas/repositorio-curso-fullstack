@@ -1,19 +1,275 @@
  @charset "UTF-8";
- mark {
-      background-color: aquamarine;
-    }
-    body {
-background-color:rgb(199, 186, 179) ;
-    }
-    h1 {
-      color:rgb(38, 1, 1);
-    }
-    h2 {
-      color:rgb(89, 40, 22);
-    }
-    h3 {
-      color:rgb(177, 98, 69);
-    }
-    p {
-      text-align: justify;
-    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    
+    --bg-navy: #0B1120;       /* Fundo Principal Autoridade */
+    --bg-offwhite: #FAFAFA;   /* Fundo Secundário Respiro Visual */
+    --text-primary: #FAFAFA;  /* Texto Claro */
+    --text-dark: #1A1A1B;     /* Texto Escuro Profissional */
+    --accent-gold: #F1E4C3;   /* Champagne Gold Elegância Sutil */
+    --font-titles: 'Cormorant Garamond', serif; /* Serifada para Autoridade */
+    --font-body: 'Montserrat', sans-serif;       /* Sans-serif para Tecnologia */
+}
+
+html {
+    scroll-behavior: smooth; 
+    font-size: 16px;      
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-navy);
+    color: var(--text-primary);
+    line-height: 1.6;        
+    overflow-x: hidden;     
+}
+
+a {
+    text-decoration: none;   
+    color: inherit;          
+    transition: 0.3s ease;  
+}
+
+ul {
+    list-style: none;         
+}
+
+
+h1, h2, h3 {
+    font-family: var(--font-titles);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent-gold); 
+}
+
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--text-primary);
+    color: var(--bg-navy);
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold); 
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 11px 29px; 
+    background-color: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-navy);
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 10%;           
+    background-color: var(--bg-navy);
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+    position: fixed;            
+    top: 0;
+    width: 100%;
+    z-index: 1000;               
+}
+
+.logo {
+    font-family: var(--font-titles);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-gold);   
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;                   
+}
+
+header nav a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.7); 
+}
+
+header nav a:hover {
+    color: var(--text-primary);   
+}
+
+#vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;
+    height: 100vh;               
+    padding: 0 15%;              
+    background-color: var(--bg-navy);
+}
+
+#vision h1 {
+    font-size: 3.5rem;          
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+#vision p {
+    font-size: 1.1rem;
+    max-width: 700px;           
+    margin-bottom: 2.5rem;
+    color: rgba(255,255,255,0.8);
+}
+
+#vision .ctas {
+    display: flex;
+    gap: 20px;                   
+}
+
+
+#about {
+    background-color: var(--bg-offwhite); 
+    color: var(--text-dark);
+    padding: 6rem 10%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 4rem;
+    align-items: center;
+}
+
+
+.about-content img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 3px solid var(--accent-gold); 
+    justify-self: center;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--bg-navy);
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+
+#expertise {
+    background-color: var(--bg-navy);
+    padding: 6rem 10%;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: rgba(255,255,255,0.03); 
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: rgba(255,255,255,0.1);
+    transform: translateY(-5px); 
+}
+
+.skill-card h4 {
+    font-family: var(--font-body);
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    
+}
+
+
+footer {
+    background-color: var(--bg-navy);
+    padding: 4rem 10%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.social-links a:hover {
+    color: var(--text-primary);
+}
+
+
+@media (max-width: 768px) {
+    html { font-size: 14px; } 
+
+    header { padding: 15px 5%; }
+    header nav ul { gap: 15px; }
+
+    #vision { padding: 0 5%; }
+    #vision h1 { font-size: 2.5rem; }
+    #vision .ctas { flex-direction: column; gap: 10px; }
+
+    .about-content { grid-template-columns: 1fr; gap: 2rem; }
+    .about-text h3 { font-size: 1.5rem; }
+
+    .skills { grid-template-columns: 1fr; }
+}

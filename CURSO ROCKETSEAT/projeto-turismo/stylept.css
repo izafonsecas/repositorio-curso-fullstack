@@ -8,6 +8,7 @@
   line-height: 150%;
 
  }
+
  body{
 background-image: url(assets/fundo2.jpg);
 background-size: cover;
@@ -33,6 +34,11 @@ main{
 
  }
 
+ #principal{
+  font-size: 22px;
+  color:#4e2d0c;
+  margin-bottom: 4px;
+ }
  h2{
   color: #D07A4A;
   font-size: 24px;
@@ -44,6 +50,7 @@ main{
   color: #4e2d0c;
   text-transform: uppercase;
   font-size: 15px;
+  font-style: italic;
   margin-top: 4px;
   margin-bottom: 4px;
  }
