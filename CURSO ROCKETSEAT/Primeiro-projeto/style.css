@@ -227,10 +227,41 @@ header nav a:hover {
     
 }
 
+.energia-card {
+    background-color: rgba(255,255,255,0.03); 
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.energia-card:hover {
+    border-color: rgba(255,255,255,0.1);
+    transform: translateY(-5px); 
+}
+
+.mobilidade-card {
+    background-color: rgba(255,255,255,0.03); 
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.mobilidade-card:hover {
+    border-color: rgba(255,255,255,0.1);
+    transform: translateY(-5px); 
+}
 #projects {
     background-color: #0A192F; 
     padding: 80px 10%;         
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+   
 }
 
 .footer {
