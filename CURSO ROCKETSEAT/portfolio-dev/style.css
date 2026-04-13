@@ -1,0 +1,313 @@
+
+.hero-section {
+    background-image: url(assets/image/background.png);
+    background-repeat: no-repeat; 
+    background-position: center left;
+    background-size: cover;
+  
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.profile img {
+    margin-bottom: 0px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    object-fit: cover;
+}
+
+.apresentacao {
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.code{
+    color:aqua;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: var(--text-color-primary);
+}
+
+.hero-section p {
+    max-width: 640px;
+    margin-inline: auto;
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.skills-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1E293B; 
+    color: var(--text-color-primary);
+    padding: 8px 16px;
+    border-radius: 100px; 
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    border-color: var(--brand-color-light);
+    background-color: #2D3748;
+}
+
+.tag img {
+    width: 16px;
+    height: 16px;
+}
+
+.projetos-empresas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    margin-top: 40px;
+    max-width: 1200px; 
+    margin-inline: auto; 
+    justify-content: center;
+}
+
+.projeto-id{
+    color:aqua;
+    font-style: italic;
+}
+
+.projetos-header {
+    margin-top: 100px;
+    text-align: center; 
+    margin-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.image-wcs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+    h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    p{
+        font-size: 14px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        flex-grow: 1;
+        color: var(--text-color-secondary);
+    }
+}
+
+.article{
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.image-wcs {
+    background: rgba(30, 41, 59, 0.5); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    padding: 24px;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.image-wcs:hover {
+    transform: translateY(-10px); 
+    background: rgba(30, 41, 59, 0.8);
+    border-color: aqua;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cards{ 
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center; 
+    list-style: none;
+    gap: 8px;                 
+    padding: 0;
+    margin-top: 16px;
+
+li{
+    background: rgba(0, 255, 255, 0.1); 
+    color: aqua;                       
+    padding: 4px 12px;
+    border-radius: 100px;             
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+ }
+
+
+.servicos-id{
+    color:aqua;
+    font-style: italic;
+}
+
+.servicos-header {
+    margin-top: 150px;
+    text-align: center; 
+    margin-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.servicos-dev{
+
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center; 
+    gap: 40px;               
+    flex-wrap: wrap;         
+    margin-top: 40px;
+    max-width: 1200px; 
+    margin-inline: auto; 
+    
+}
+
+.dev-servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    max-width: 200px;
+
+    p{
+        font: var(--text-color-secondary);
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 30px;
+        font-size: 18px;
+       
+    }
+}
+.image-servico{
+
+    width: 120px; 
+    height: 120px;
+    background: rgba(30, 41, 59, 0.5); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    margin-bottom: 15px;
+    gap: 32px;
+
+    img {
+    width: 60px; 
+    height: auto;
+    object-fit: contain;
+}
+   
+}
+
+.social-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    flex-direction: column;   
+    text-align: center;
+    max-width: auto;
+    background-image: url(assets/image/background.png);
+    background-repeat: no-repeat; 
+    background-position: center left;
+    background-size: cover;
+    min-height: 500px;
+    gap: 16px;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+
+    h3{
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    p{
+        margin-bottom: 32px;
+        color: aqua;
+    }
+}
+.dev-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.dev-tags:hover{
+    color:#00ffff;
+}
+.social-tags {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1E293B; 
+    color: var(--text-color-primary);
+    padding: 8px 16px;
+    border-radius: 100px; 
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.social-tag:hover {
+    border-color: var(--brand-color-light);
+    background-color: #2D3748;
+    
+}
+
+.social-tag img {
+    width: 16px;
+    height: 16px;
+}
+

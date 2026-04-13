@@ -1,34 +1,9 @@
- @charset "UTF-8";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
-
-:root {
-    
-    --bg-navy: #0B1120;       /* Fundo Principal Autoridade */
-    --bg-offwhite: #FAFAFA;   /* Fundo Secundário Respiro Visual */
-    --text-primary: #FAFAFA;  /* Texto Claro */
-    --text-dark: #1A1A1B;     /* Texto Escuro Profissional */
-    --accent-gold: #F1E4C3;   /* Champagne Gold Elegância Sutil */
-    --font-titles: 'Cormorant Garamond', serif; /* Serifada para Autoridade */
-    --font-body: 'Montserrat', sans-serif;       /* Sans-serif para Tecnologia */
-}
 
 html {
     scroll-behavior: smooth; 
     font-size: 16px;      
 }
 
-body {
-    font-family: var(--font-body);
-    background-color: var(--bg-navy);
-    color: var(--text-primary);
-    line-height: 1.6;        
-    overflow-x: hidden;     
-}
 
 a {
     text-decoration: none;   

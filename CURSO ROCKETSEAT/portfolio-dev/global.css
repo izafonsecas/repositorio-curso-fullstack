@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    
+    --bg-navy: #0b1120;       
+    --bg-offwhite: #FAFAFA;   
+    --text-primary: #FAFAFA;  
+    --text-dark: #1A1A1B;     
+    --accent-gold: #F1E4C3;   
+    --font-titles: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --color-underline: #00ffff;
+
+
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-navy);
+    color: var(--text-primary);
+  
+}
+
+a{
+    font-family: var(--text-primary);
+    color: var(--accent-gold);
+}
+
+a:hover{
+    color:var(--color-underline);
+}
