@@ -58,7 +58,7 @@ Durante o desenvolvimento, foram estudados e aplicados diversos conceitos:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/izafonsecas/gerador-de-convites.git
+git clone https://github.com/izafonsecas/repositorio-curso-fullstack/tree/main/CURSO%20ROCKETSEAT/projeto-forms
 ```
 
 2. Acesse a pasta do projeto:
@@ -68,7 +68,7 @@ cd gerador-de-convites
 
 3. Abra o arquivo `index.html` no seu navegador.
 
-## 🛠️ Próximas evoluções
+# Próximas evoluções
 
 A aplicação está completa visualmente. Como próxima evolução do projeto, planejo:
 
@@ -79,15 +79,11 @@ A aplicação está completa visualmente. Como próxima evolução do projeto, p
 - [ ] Exportar convite como imagem (PNG) ou PDF
 - [ ] Compartilhar convite via link
 
-## 👤 Autor
+# Autor
 
-Desenvolvido por **<!-- AJUSTAR: Seu Nome -->**
+Desenvolvido por Izabella Fonseca
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/SEU-USUARIO)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU-PERFIL)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/izafonsecas)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/izafonsecas)
 
----
 
-<p align="center">
-  Feito com 💜 durante o curso <a href="https://www.rocketseat.com.br/">Explorer da Rocketseat</a>
-</p>
