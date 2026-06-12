@@ -33,3 +33,8 @@ a{
 a:hover{
     color:var(--color-underline);
 }
+
+img{
+    max-width: 100%;
+    display: block;
+}
